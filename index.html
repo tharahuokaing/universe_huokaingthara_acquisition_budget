@@ -31,6 +31,21 @@
       margin-bottom: 30px;
       text-align: center;
     }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .central-logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid #00ffcc;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+      background: #000;
+    }
     h1 { color: #ff3366; text-shadow: 0 0 10px #ff3366; margin: 0 0 10px 0; font-size: 1.5rem; }
     h2, h3 { color: #c5a059; text-shadow: 0 0 5px #c5a059; }
     table {
@@ -98,20 +113,17 @@
   </style>
   <link rel="icon" href="isp_announcement.jpg">
 </head>
-<body
+<body>
 
-  <!-- LOGIN CONTAINER -->
-  <main id="loginContainer" class="hologram">
-      <div class="bank-logo-wrapper">
-          <img src="budget_estimate.jpg" alt="Bank Logo" class="bank-logo-img">
-        </div>
-    
   <!-- HOLOGRAM SCANLINES -->
   <div id="holo-overlay"></div>
 
   <div class="container">
-    <!-- MISSION CRITICAL HEADER -->
+    <!-- MISSION CRITICAL HEADER & CENTERED LOGO -->
     <header>
+      <div class="logo-container">
+        <img src="budget_estimate.jpg" alt="Universe Huokaing Thara Group Logo" class="central-logo">
+      </div>
       <h1>🌌 UNIVERSE HUOKAING THARA GROUP — MEDIA &amp; TECH BUDGET MATRIX</h1>
       <p><strong>STRATEGIC TARGET:</strong> Global Platform Rollout Active | <span id="countdown">Calculating...</span> until Full Launch</p>
       <p>Bilingual Art Production, High-Tech Web Infrastructure &amp; Global Distribution Scaling | CLASSIFIED</p>
